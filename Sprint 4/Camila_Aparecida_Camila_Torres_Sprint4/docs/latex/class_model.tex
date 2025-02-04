@@ -1,0 +1,197 @@
+\doxysection{Model Class Reference}
+\hypertarget{class_model}{}\label{class_model}\index{Model@{Model}}
+
+
+Manages systems and flows, and runs simulations.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_model}{Model}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_model}{Model}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a427a805ff8293a1a55ec9e1e98900405}{Model}} (const \mbox{\hyperlink{class_model}{Model}} \&model)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \doxylink{class_model}{Model}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}} (\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}system)
+\begin{DoxyCompactList}\small\item\em Adds a system to the model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_ab69613bde0ace81c92bbf519660ccb2c}{add}} (\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}flow)
+\begin{DoxyCompactList}\small\item\em Adds a flow to the model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a1d71f2033a4f266d7e5915b145668ec2}{run}} (int \mbox{\hyperlink{class_model_a34f2534a428bc127015a533885c3cee7}{time}})
+\begin{DoxyCompactList}\small\item\em Runs the simulation for a specified amount of time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}}
+\item 
+vector$<$ \mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}
+\item 
+int \mbox{\hyperlink{class_model_a34f2534a428bc127015a533885c3cee7}{time}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages systems and flows, and runs simulations. 
+
+The \doxylink{class_model}{Model} class manages a collection of systems and flows, and can execute a simulation over a specified amount of time. The time progression is controlled by the {\ttfamily run} function. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_model_ae3b375de5f6df4faf74a95d64748e048} 
+Model\+::\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{class_model}{Model}. 
+
+Initializes the \doxylink{class_model}{Model} object with no systems or flows. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_model_ae3b375de5f6df4faf74a95d64748e048_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\index{Model@{Model}!````~Model@{\texorpdfstring{$\sim$}{\string~}Model}}
+\index{````~Model@{\texorpdfstring{$\sim$}{\string~}Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Model()}{\string~Model()}}
+{\footnotesize\ttfamily \label{class_model_ad6ebd2062a0b823db841a0b88baac4c0} 
+Model\+::\texorpdfstring{$\sim$}{\string~}\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for \doxylink{class_model}{Model}. 
+
+Cleans up the resources used by the \doxylink{class_model}{Model}, including systems and flows. \Hypertarget{class_model_a427a805ff8293a1a55ec9e1e98900405}\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_model_a427a805ff8293a1a55ec9e1e98900405} 
+Model\+::\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_model}{Model}} \&}]{model}{}\end{DoxyParamCaption})}
+
+
+
+Copy constructor for \doxylink{class_model}{Model}. 
+
+Creates a copy of another \doxylink{class_model}{Model} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \doxylink{class_model}{Model} object to copy. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_model_a427a805ff8293a1a55ec9e1e98900405_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_ab69613bde0ace81c92bbf519660ccb2c}\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_model_ab69613bde0ace81c92bbf519660ccb2c} 
+void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow}{}\end{DoxyParamCaption})}
+
+
+
+Adds a flow to the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow} & Pointer to the \doxylink{class_flow}{Flow} to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_a302d4ed93c6e6f9a0f728e021a91f821}\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_model_a302d4ed93c6e6f9a0f728e021a91f821} 
+void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{system}{}\end{DoxyParamCaption})}
+
+
+
+Adds a system to the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & Pointer to the \doxylink{class_system}{System} to be added. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a302d4ed93c6e6f9a0f728e021a91f821_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_a1d71f2033a4f266d7e5915b145668ec2}\index{Model@{Model}!run@{run}}
+\index{run@{run}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_model_a1d71f2033a4f266d7e5915b145668ec2} 
+void Model\+::run (\begin{DoxyParamCaption}\item[{int}]{time}{}\end{DoxyParamCaption})}
+
+
+
+Runs the simulation for a specified amount of time. 
+
+The simulation is executed by advancing the time and updating the systems and flows at each step.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The duration of the simulation. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{class_model_a1d71f2033a4f266d7e5915b145668ec2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_a1d71f2033a4f266d7e5915b145668ec2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}\index{Model@{Model}!flows@{flows}}
+\index{flows@{flows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily \label{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a} 
+vector$<$\mbox{\hyperlink{class_flow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector containing pointers to the flows \Hypertarget{class_model_ac7dea8829149e597d2671dbc0a538bf7}\index{Model@{Model}!systems@{systems}}
+\index{systems@{systems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily \label{class_model_ac7dea8829149e597d2671dbc0a538bf7} 
+vector$<$\mbox{\hyperlink{class_system}{System}}\texorpdfstring{$\ast$}{*}$>$ Model\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector containing pointers to the systems \Hypertarget{class_model_a34f2534a428bc127015a533885c3cee7}\index{Model@{Model}!time@{time}}
+\index{time@{time}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily \label{class_model_a34f2534a428bc127015a533885c3cee7} 
+int Model\+::time\hspace{0.3cm}{\ttfamily [protected]}}
+
+The simulation time 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{model_8h}{model.\+h}}\item 
+My\+Vensim/src/\mbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}

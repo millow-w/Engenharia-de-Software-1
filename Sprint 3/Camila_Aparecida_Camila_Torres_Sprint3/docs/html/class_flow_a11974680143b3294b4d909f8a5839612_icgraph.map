@@ -1,0 +1,5 @@
+<map id="Flow::getTarget" name="Flow::getTarget">
+<area shape="rect" id="Node000001" title="Gets the target system of the flow." alt="" coords="253,5,364,32"/>
+<area shape="rect" id="Node000002" href="$class_logistic_flow.html#aa29eeea425d54383f2eaf524b2b5d533" title="Executes the equation of the flow." alt="" coords="5,5,205,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,21,205,21,205,16,237,16"/>
+</map>
